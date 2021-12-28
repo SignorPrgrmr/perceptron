@@ -6,7 +6,7 @@ trait Neuron:
 
 	def sendSignal(netInput: Int): Unit
 
-	def updateWeights(data: mutable.Map[NeuralNetworkInput, Int]): Unit
+	def updateWeights(data: Map[NeuralNetworkInput, Int]): Unit
 
 
 

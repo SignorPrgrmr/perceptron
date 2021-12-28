@@ -7,7 +7,7 @@ class InputNeuron(private val nextLayer: mutable.Map[NeuralNetworkInput, Int]) e
 	override def sendSignal(netInput: Int): Unit =
 		for (nni, w) <- nextLayer do nni put netInput * w
 
-	override def updateWeights(data: mutable.Map[NeuralNetworkInput, Int]): Unit =
+	override def updateWeights(data: Map[NeuralNetworkInput, Int]): Unit =
 		for nni <- data.keys do
 			val delta = data(nni)
 			nextLayer get nni match {

@@ -7,7 +7,7 @@ class Bias(private val nextLayer: mutable.Map[NeuralNetworkInput, Int]):
 	def sendSignal(): Unit =
 		for (nni, b) <- nextLayer do nni put b
 
-	def updateBiases(data: mutable.Map[NeuralNetworkInput, Int]): Unit =
+	def updateBiases(data: Map[NeuralNetworkInput, Int]): Unit =
 		for nni <- data.keys do
 			val y = data(nni)
 			nextLayer get nni match {

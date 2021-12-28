@@ -27,9 +27,9 @@ object NeuralNetwork extends App {
 			readInput("Please enter 1 to continue: ")
 			if result != sampleData.y then
 				isChanged = true
-				inputNeuron1.neuron updateWeights mutable.Map(outputNeuron -> sampleData.x1 * sampleData.y * ALPHA)
-				inputNeuron2.neuron updateWeights mutable.Map(outputNeuron -> sampleData.x2 * sampleData.y * ALPHA)
-				bias updateBiases mutable.Map(outputNeuron -> sampleData.y * ALPHA)
+				inputNeuron1.neuron updateWeights Map(outputNeuron -> sampleData.x1 * sampleData.y * ALPHA)
+				inputNeuron2.neuron updateWeights Map(outputNeuron -> sampleData.x2 * sampleData.y * ALPHA)
+				bias updateBiases Map(outputNeuron -> sampleData.y * ALPHA)
 		if isChanged then trainNeuralNetwork()
 
 	trainNeuralNetwork()

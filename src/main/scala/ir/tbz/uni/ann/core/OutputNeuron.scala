@@ -16,7 +16,7 @@ class OutputNeuron extends Neuron :
 		else if -THETA <= input && input <= THETA then 0
 		else -1
 
-	override def updateWeights(data: mutable.Map[NeuralNetworkInput, Int]): Unit = ()
+	override def updateWeights(data: Map[NeuralNetworkInput, Int]): Unit = ()
 
 object OutputNeuron:
 	def getOutput(neuron: Neuron): Int =
