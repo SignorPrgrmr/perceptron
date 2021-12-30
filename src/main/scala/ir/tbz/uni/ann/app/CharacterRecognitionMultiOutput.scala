@@ -114,7 +114,7 @@ object CharacterRecognitionMultiOutput extends JFXApp3 {
 								i <- range
 								j <- range
 							do
-								inputNeurons(i)(j).put(if frontData(i)(j) then 1 else -1)
+								inputNeurons(i)(j).put(if frontData(i)(j) then 1 else 0)
 							bias.sendSignal()
 							val output1 = OutputNeuron getOutput outputNeuron1.neuron
 							val output2 = OutputNeuron getOutput outputNeuron2.neuron

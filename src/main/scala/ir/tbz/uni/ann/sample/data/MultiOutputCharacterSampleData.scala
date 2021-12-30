@@ -447,6 +447,28 @@ object MultiOutputCharacterSampleData {
 				),
 				-1,
 				1
+			),
+			MultiOutputCharacterSampleData(
+				Array[Array[Int]](
+					Array[Int](1, 1, 1, 1, 1),
+					Array[Int](1, 1, 1, 1, 1),
+					Array[Int](1, 1, 1, 1, 1),
+					Array[Int](1, 1, 1, 1, 1),
+					Array[Int](1, 1, 1, 1, 1)
+				),
+				-1,
+				-1
+			),
+			MultiOutputCharacterSampleData(
+				Array[Array[Int]](
+					Array[Int](0, 0, 0, 0, 0),
+					Array[Int](0, 0, 0, 0, 0),
+					Array[Int](0, 0, 0, 0, 0),
+					Array[Int](0, 0, 0, 0, 0),
+					Array[Int](0, 0, 0, 0, 0)
+				),
+				-1,
+				-1
 			)
 		)
 	

@@ -15,7 +15,6 @@ class InputNeuron(private val nextLayer: mutable.Map[NeuralNetworkInput, Int]) e
 				case Some(weight) =>
 					nextLayer += (nni -> (weight + delta))
 			}
-		println(nextLayer.mkString("{", ",", "}"))
 
 
 object InputNeuron:
